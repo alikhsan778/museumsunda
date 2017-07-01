@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iak_batch3.alikhsan778.museumsunda.DetailActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/view_toolbar"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:paddingBottom="16dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                card_view:cardBackgroundColor="#ede7f6"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/image_logo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_alignParentRight="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/logo_museum" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/image_logo"
+                            android:fontFamily="casual"
+                            android:text="#Museum Sunda"
+                            android:textAllCaps="true"
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:textColor="#673ab7"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/text_ticket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ticket Order"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#673ab7"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ico_profile"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/profile" />
+
+                        <TextView
+                            android:id="@+id/nama_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:text="Nama"
+                            android:textAppearance="?android:textAppearanceSmall" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ico_phone"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/phone" />
+
+                        <TextView
+                            android:id="@+id/phone_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:text="08902192"
+                            android:textAppearance="?android:textAppearanceSmall" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ico_email"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/mail" />
+
+                        <TextView
+                            android:id="@+id/email_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:text="alskalkd.com"
+                            android:textAppearance="?android:textAppearanceSmall" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <ImageView
+                            android:id="@+id/ico_tixet"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/ticket" />
+
+                        <TextView
+                            android:id="@+id/nama_tiket_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_toRightOf="@+id/ico_tixet"
+                            android:text="alskalkd.com"
+                            android:textAppearance="?android:textAppearanceSmall" />
+
+                        <TextView
+                            android:id="@+id/harga_tiket"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:text="0"
+                            android:textAppearance="?android:textAppearanceSmall" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#673ab7" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="Order Tiket For" />
+
+                        <Button
+                            android:id="@+id/btn_min"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="-"
+                            android:onClick="buttonMinus"/>
+
+                        <TextView
+                            android:id="@+id/quantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:text="0"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black" />
+
+                        <Button
+                            android:id="@+id/btn_plus"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:onClick="buttonPlus"
+                            android:text="+" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="#673ab7"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Ticket Price : "
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="#ede7f6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="Rp."
+                            android:id="@+id/harga_total"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="#ede7f6" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                card_view:cardBackgroundColor="#aa00ff"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:onClick="buttonSubmit2"
+                card_view:cardCornerRadius="8dp">
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:text="SUBMIT"
+                    android:onClick="buttonSubmit"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#ede7f6"
+                    android:textStyle="bold" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
